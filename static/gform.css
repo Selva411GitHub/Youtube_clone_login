@@ -1,0 +1,79 @@
+.google{
+    padding-top: 5%;
+    height:6%;
+}
+*{
+    font-family: sans-serif;
+}
+.gform{
+    padding-bottom: 10%;
+    margin-left:35%;
+    width:30%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(172, 172, 172);
+}
+.footer{
+    margin-left:40%;
+}
+.user  span{
+    line-height:1px;
+    display:inline-flex;
+}
+.flex-div{
+    display: flex;
+}
+.userptag{
+    color: grey;
+}
+
+section{
+    text-align: center;
+}
+
+form{
+    border: 1.5px solid rgb(212, 212, 212)
+}
+.gform div{
+    margin:7%;
+    width: 90%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.gmail{
+    border-radius: 50%;
+    height:5%;
+    width: auto;
+}
+.gform div p  a{
+    text-decoration: none;
+    color: black;
+}
+.blue{
+    color: rgb(26,115,232);
+}
+input{
+    outline:3px solid  rgb(4, 102, 231);
+    border: none;
+    border-radius:4px ;
+    height:8% ;
+    width: 26%;
+}
+div  .button{
+    width:6% ;
+    height: 1cm;
+    border: none;
+    border-radius: 4px;
+    color: white;    
+    background-color : rgb(26,115,232) ;
+    margin-left: 6%;
+}
+.account{
+    /* justify-content: space-between; */
+    margin-left: 45%;
+}
+div  h5{
+    margin-right: 6%;
+}
+div  a{
+    text-decoration: none;
+}

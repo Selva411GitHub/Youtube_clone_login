@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/ytube.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="icon">
+            <img src="./static/pictures/menu-icon-vector.jpg" alt="">
+            <img src="./static/pictures/youtube.png" alt="">
+        </div>
+        <div class="nav-middle">
+            <div class="search-box">
+            <input class="search" placeholder="Search" type="search">
+            <img src="./static/pictures/search.png" alt=""></div>
+            <img src="./static/pictures/mic ggle.png" class="mic"  alt="">
+        </div>
+        <div class="nav-right">
+            <a href="{{url_for('youtubeadd')}}"><img src="./static/pictures/uplaod.png" alt=""></a>
+            <img src="./static/pictures/apps.png" alt="">
+            <img src="./static/pictures/bellicon.png" alt="">
+            
+           <div class="dropdown"> <a href="{{url_for('googleform')}}"><button  class="user-name-db">{{data[0].name}}</button></a>
+            <div class="dropdown-content">
+                <a href="{{url_for('youtubehome')}}">log out</a>
+              </div>
+        </div>
+        </div>
+        </nav>
+        <div class="sidebar  small-sidebar">
+            <div class="shortcut-links">
+                    <a href="#"><img src="./static/pictures/home.png" alt=""><p>Home</p></a>
+                    <a href="#"><img src="./static/pictures/explore.png" alt=""><p>Explore</p></a>
+                    <a href="#"><img src="./static/pictures/subscription.png" alt=""><p>Subscription</p></a>
+                    <a href="#"><img src="./static/pictures/library.png" alt=""><p>Library</p></a>
+                    <a href="#"><img src="./static/pictures/history.png" alt=""><p>history</p></a>
+                    <a href="#"><img src="./static/pictures/playlist.png" alt=""><p>Playlist</p></a>
+                    <a href="#"><img src="./static/pictures/messages sidebar.png" alt=""><p>Messages</p></a>
+                    <a href="#"><img src="./static/pictures/show more.png" alt=""><p>Show More</p></a>
+                    <hr>
+            </div> 
+            <div class="subscribed-list">
+                <h3>subscribed</h3>
+                <a href="#"><img src="./static/pictures/sergio.jpg" alt=""><p>sergio</p></a>
+                <a href="#"><img src="./static/pictures/ani.jpg" alt=""><p>Anirudh</p></a>
+                <a href="#"><img src="./static/pictures/python.png" alt=""><p>Python</p></a>
+                <a href="#"><img src="./static/pictures/books.avif" alt=""><p>Stories</p></a>
+                <a href="#"><img src="./static/pictures/arr.jpg" alt=""><p>arrahman</p></a>
+                <a href="#"><img src="./static/pictures/sony.png" alt=""><p>Sony</p></a>
+                <a href="#"><img src="./static/pictures/rabbit.avif" alt=""><p>Rabbit</p></a>
+                <hr>
+            </div>
+        </div>   
+        <div class="container  large-container">
+          <div class="banner">
+            <div><img src="./static/pictures/banner.avif" alt="">
+          </div>
+          </div>
+          <div class="list-container">
+    
+                {%for i in data %}
+                <div class="vid-last">
+                    <h1></h1>
+                    <a href="play/{{i.id}}"><img src="{{i.thumbnail}}" class="thumbnail" alt=""></a>
+                    <div class="flex-div">
+                        <img src="{{i.thumbnaildp}}" class="thumbnaildp" alt="">
+                        <div class="vid-info">
+                                <a href="#">{{i.description}}</a>
+                                    <p>{{i.channel}}</p>
+                                    <p>{{i.views}}</p>
+                        </div>
+                    </div>       
+                </div>{%endfor%}
+                
+            </div>
+        </div>
+        <!-- {%for i in img_html %}
+        <h1>{{i}}</h1>
+        {%endfor%} -->
+    <script src="/static/script.js"></script>
+</body>
+</html>

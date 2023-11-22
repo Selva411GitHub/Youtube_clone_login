@@ -1,0 +1,54 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/ytube.css">
+    <link rel="icon" type="image/webp" href="\static\pictures\youtube_icon.webp">
+</head>
+<body>
+    
+<div class="uplaod-nav   flex-div">
+    <h1>Uplaod video</h1><img src="/static/pictures/youtube_icon.webp" alt="">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button><a href="{{url_for('youtubehome')}}">go back</a></button>
+</div>
+
+<form class="uplaod-form" method="post">
+
+    <label>Uplaod channel;</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="file" name="thumbnaildp" placeholder="uplaod thumbnail" ><br>
+
+    <label>Uplaod gmail;</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="name" placeholder="uplaod name" ><br>
+
+    <label>Uplaod thumbnail;</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="file" name="thumbnail" placeholder="uplaod thumbnaildp" ><br>
+
+    <label>Uplaod description;</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="description" placeholder="uplaod description" ><br>
+
+    <label>Uplaod channel;</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="channel" placeholder="uplaod channel" ><br>
+
+    <label>Uplaod views;</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="views" placeholder="uplaod views" ><br>
+
+    <label>Uplaod video;</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="video" placeholder="uplaod video" ><br>
+    <input class="submit" type="submit" >
+</form>
+</body>
+</html>
+
+
